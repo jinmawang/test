@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none;
+}
+/*shortcut-nav部分start*/
+.shortcut-nav {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+    font: 400 15px/44px "microsoft yahei";
+}
+.shortcut-nav-dropdown {
+    width: 210px;
+    height: 44px;
+    position: relative;
+    z-index: 10;
+    float: left;
+}
+.shortcut-nav-dropdown-all {
+
+    background-color: #B1191A;
+}
+.shortcut-nav-dropdown-all a {
+    display: block;
+    height: 44px;
+
+    color: white;
+    padding: 0 10px;
+}
+.shortcut-nav-dropdown-one {
+    height: 466px;
+    background-color: #C81623;
+    margin-top: 2px;
+}
+.shortcut-nav-items {
+    width: 755px;
+    height: 44px;
+    float: left;
+
+}
+.shortcut-nav-items li a {
+    display: block;
+    height: 44px;
+    padding: 0 20px;
+
+}
+.shortcut-nav-items li {
+    float: left;
+}
+.shortcut-nav-items-li {
+    position: relative;
+
+}
+.shortcut-nav-items-heiwu {
+    position: absolute;
+    top: 0px;
+    right: -8px;
+}
+.shortcut-nav-computer {
+    height: 40px;
+    width: 140px;
+    float: right;
+    margin-top: 2px;
+    background: url(images/computer.jpg) no-repeat;
+}
+.shortcut-nav-computer a {
+    display: block;
+    height: 40px;
+    width: 140px;
+}
+.shortcut-nav-dropdown-one li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;;
+}
+.shortcut-nav-dropdown-one li a:hover {
+    background-color: #fff;
+    color: red;
+}
+.shortcut-nav-dropdown-one ul {
+    margin-left: 10px;
+}
+ 
+
+/*shortcut-nav部分end*/
+/*双11小人banner部分start*/
+.xiaoren-banner {
+    position: relative;
+
+}
+.xiaoren-banner a {
+    display: block;
+    width: 100%;
+    height: 603px;
+    position: absolute;
+    top: 0px;
+    background:url(images/banner.jpg) no-repeat center;
+    z-index: -1;
+}
+/*双11小人banner部分end*/
+/*slider部分start*/
+.slider {
+    margin: 12px 0 0 220px;
+    height: 454px;
+}
+.slider-img {
+    width: 730px;
+    height: 454px;
+    background-color: pink;
+    float: left;
+    position: relative;
+}
+.slider-img a,.recommend-img a {
+    display: block;
+    width: 40px;
+    height: 80px;
+    font: 400 18px/80px simsun;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+}
+.slider-img-r,.recommend-img-r {
+    right: 0;
+}
+.slider-img a:hover,.recommend-img a:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.slider .slider-news {
+    width: 250px;
+    height: 451px;
+    float: right;
+    border: 1px solid #E4E4E4;
+
+}
+ .news-theme {
+    font: 400 16px/44px simsun;
+    padding-left: 15px;
+}
+.slider-news-theme .news-more {
+    float: right;
+    line-height: 44px;
+    margin-right: 25px;
+}
+
+.slider-news-theme,.slider-news-servise {
+    height: 44px;
+}
+.slider-news-content {
+    height: 143px;
+    border-top:1px  dashed  #E4E4E4;
+    border-bottom:1px dotted #E4E4E4;
+    padding: 5px 0 0 15px;
+    line-height: 28px;
+}
+.slider-news-content li span {
+    font:800 12px simsun ;
+    margin-right: 5px;
+}
+.slider-news-icon {
+    height: 213px;
+    overflow: hidden;
+}
+.slider-news-servise {
+    border-bottom:1px  dashed  #E4E4E4;
+}
+.slider-news-icon li {
+    width: 62px;
+    height: 70px;
+    border: 1px solid #E4E4E4;
+    border-top: none;
+    float: left;
+    margin-left: -1px;
+}
+.slider-news-icon ul {
+    width: 260px;
+    
+}
+.slider-news-icon li a {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+
+
+}
+.slider-news-icon li  i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: url(images/fly.png);
+}
+.slider-news-icon .fly2  i {
+    background-position: 0 -25px;
+}
+.slider-news-icon .fly3  i {
+    background-position: 0 -50px;
+}
+.slider-news-icon .fly4  i {
+    background-position: 0 -75px;
+}
+.slider-news-icon .fly5  i {
+    background-position: 0 -100px;
+}
+.slider-news-icon .fly6  i {
+    background-position: 0 -125px;
+}
+.slider-news-icon .fly7  i {
+    background-position: 0 -150px;
+}
+.slider-news-icon .fly8  i {
+    background-position: 0 -175px;
+}
+.slider-news-icon .fly9  i {
+    background-position: 0 -200px;
+}
+.slider-news-icon .fly10  i {
+    background-position: 0 -225px;
+}
+.slider-news-icon .fly11  i {
+    background-position: 0 -250px;
+}
+.slider-news-icon .fly12  i {
+    background-position: 0 -275px;
+}
+.slider-news-icon .send {
+    background: url(images/send.png) no-repeat top right;
+}
+/*slider部分end*/
+/*todayrecommend部分start*/
+.todayrecommend {
+
+    margin: 10px auto 40px ;
+}
+.todayrecommend .recommend {
+    width: 210px;
+    height: 152px;
+    background: url(images/today.png) right bottom;
+    float: left;
+}
+.recommend-img img {
+    float: left;
+    margin-right: 1px;
+}
+.recommend-img {
+    width: 1000px;
+    height: 160px;
+    position: relative;
+    float: left;
+}
+.recommend-img4 {
+    width: 200%;
+}
+  
+/*todayrecommend部分end*/

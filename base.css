@@ -1,0 +1,361 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+    font-size: 13px;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+/*site-nav 部分start*/
+.site-nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #E8E8E7;
+}
+.site-nav-send,
+.site-nav-r .site-nav-r-fore {
+    position : relative;
+    padding: 0 25px 0 10px;
+}
+.site-nav-send i ,
+.site-nav-r-fore i {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 15px;
+    height: 8px;
+    overflow: hidden;
+
+}
+.site-nav-send i s,
+.site-nav-r-fore i s {
+    position: absolute;
+    top: -14px;
+    left: 0px;
+}
+.tel {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 15px;
+    height: 20px;
+    background:url(images/tel.png);
+
+}
+.site-nav-r .teltel {
+    padding-left: 25px;
+}
+.tel:hover {
+    background-position: 0 -25px;
+}
+.site-nav-r ul li {
+    float: left;
+    padding: 0 10px 0 10px;
+}
+.login {
+    color: red;
+    font-size: 13px;
+}
+.site-nav-r .site-nav-r-line {
+    width: 1px;
+    height: 12px;
+    background-color: #DDDDDD;
+    padding: 0;
+    margin-top: 9px;
+}
+/*site-nav 部分end*/
+/*topbanner部分start*/
+.topbanner {
+    background-color: #8A25C7;
+    height: 80px;
+}
+ .topbanner-img {
+     width: 1210px;
+     margin: 0 auto;
+     position: relative;
+}
+ .topbanner .close {
+     width: 19px;
+     height: 19px;
+     background: url(images/close.png);
+     position: absolute;
+     top: 0;
+     right: 0;
+     margin-top: 10px;
+ }
+ .close:hover {
+     background-position: bottom;
+ }
+/*topbanner部分end*/
+/*serch部分start*/
+.search-log {
+    width: 362px;
+    height: 60px;
+    float: left;
+    padding: 20px 0;
+    position: relative;
+
+
+}
+.search-log-log {
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    background: url(images/jd-logo.png);
+
+
+}
+.search-log-dong {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 13px;
+    background:url(images/dong.gif);
+}
+.search-a {
+    width: 538px;
+    height: 36px;
+    float: left;
+    margin-top: 25px;
+}
+.search-a input {
+    width: 446px;
+    height: 24px;
+    border: 2px solid #B61D1D;
+    padding: 4px;
+    font: 12px/24px "mircosoft yahei";
+    color: #666666;
+    float: left;
+}
+.search-a button {
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    float: left;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.car {
+    width: 100px;
+    height: 34px;
+    float: right;
+    margin: 25px 65px 0 0;
+    padding-left: 40px;
+    font: 400 12px/34px simsun;
+    border: 1px solid #DFDFDF;
+    position: relative;
+}
+.car a {
+    margin-right: 10px;
+}
+
+.car-img {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    background: url(images/tel.png) 0 -90px;
+}
+.car-number {
+    position: absolute;
+    top: -8px;
+    right: 26px;
+    width: 16px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 7px 7px 7px 0;
+}
+.more {
+    width: 490px;
+    height: 28px;
+    float: left;
+   margin-top: 10px;
+}
+.search .more a {
+    padding-right: 10px;
+}
+/*serch部分end*/
+/*foot部分start*/
+.foot-slogan {
+    height: 94px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.foot-slogan .slogan {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+}
+.foot-slogan .slogan1 {
+    margin-left: -600px;
+}
+.foot-slogan .slogan2 {
+    margin-left: -310px;
+}
+.foot-slogan .slogan4 {
+    margin-left: 300px;
+}
+.shopping-theme {
+    font: 400 16px/36px "mircosoft yahei";
+}
+.shopping-detail {
+    font: 400 12px/20px "mircosoft yahei";
+}
+.shopping dl {
+    width: 200px;
+    float: left;
+    margin-top: 15px;
+}
+.shopping .shopping-last {
+    width: 100px;
+}
+.shopping .map {
+    width: 210px;
+    height: 160px;
+    background:url(images/china.png) no-repeat left bottom;
+    float: right;
+    margin: 10px 33px 0 0;
+    padding-right: 10px;
+}
+.map a {
+    float: right;
+}
+.shopping {
+    height: 180px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.foot-others  {
+    text-align: center;
+    padding: 22px 0;
+}
+.foot-others-links a {
+    padding: 0 10px;
+}
+.foot-others-copyright {
+    margin: 15px 0;
+}
+.foot-others-message img {
+    padding-right: 10px;
+
+}
+/*foot部分end*/

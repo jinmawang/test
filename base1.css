@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+ul {
+    list-style: none;				/*清除列表风格*/
+}
+.w {
+    width: 1210px;
+    margin: 0 auto;
+}
+i,s {
+    font-style: normal;
+    text-decoration: none;
+}
+/*top部分start*/
+.top {
+    height: 30px;
+    background-color: #F1F1F1;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666666;
+}
+.nav {
+    height: 30px;
+}
+.nav-l {
+    float: left;
+    position: relative;
+}
+.nav-l-city {
+    padding-right: 20px;
+}
+.nav-l i ,li i{ position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 15px;
+    height: 8px;
+    overflow: hidden;
+    font: 400 15px/15px "宋体";
+}
+.nav-l i s,li i s {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+}
+.nav-r {
+    float: right;
+}
+ul li {
+    float: left;
+    padding: 0 10px 0 10px;
+    position: relative;
+}
+.login {
+    color: red;
+    
+}
+ul  .line {
+    width: 1px;
+    height: 12px;
+    background-color: #DDDDDD;
+    padding: 0;
+    margin-top: 9px;
+    margin-left: 5px;
+    
+}
+.nav-r-san {
+    padding-right: 17px;
+}
+li .tel {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    background: url(images/tel.png);
+}
+li .tel:hover {
+    background-position: 0 -25px;
+}
+.teltel {
+    padding-left: 25px;
+}
+/*top部分end*/
+/*banner部分start*/
+.banner {
+    height: 80px;
+    background-color: #8B25C6;
+}
+.bannerimg {
+    height: 80px;
+    background: url(images/topbanner.jpg);
+    position: relative;
+}
+.bannerimg .close {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background: url(images/close.png);
+}
+.bannerimg .close:hover {
+    background-position: bottom;
+}
+/*banner部分end*/
+/*京东logo search部分start*/
+.search-log {
+    width: 362px;
+    height: 60px;
+    float: left;
+    padding: 20px 0;
+    position: relative;
+
+
+}
+.search-log-log {
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    background: url(images/jd-logo.png);
+
+
+}
+.search-log-dong {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 13px;
+    background:url(images/dong.gif);
+}
+.search-a {
+    width: 538px;
+    height: 61px;
+    float: left;
+    background-color: purple;
+}
+.car {
+    width: 230px;
+    height: 100px;
+    float: right;
+    background-color: grey;
+}
+.more {
+    width: 490px;
+    height: 28px;
+    float: left;
+    background-color: yellow;
+}
+/*京东logo search部分end*/
